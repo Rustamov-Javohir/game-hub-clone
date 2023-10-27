@@ -14,7 +14,7 @@ import { SearchIcon } from "@chakra-ui/icons";
 const Header = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
-        <HStack justifyContent='space-between' p='5'>
+        <HStack justifyContent='space-between' alignItems='center' p='5'>
             <Heading>Logo</Heading>
             <InputGroup>
                 <InputLeftElement pointerEvents='none'>

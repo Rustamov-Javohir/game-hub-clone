@@ -1,7 +1,10 @@
 import Header from "../components/Header";
 import { Grid, GridItem, Show } from "@chakra-ui/react";
+import useGames from "../hooks/useGames";
+import Main from "../components/Main";
 
 const Root = () => {
+    const games = useGames();
     return (
         <Grid
             templateAreas={{
@@ -16,8 +19,8 @@ const Root = () => {
                     Aside
                 </GridItem>
             </Show>
-            <GridItem area='main' bg='purple'>
-                Main
+            <GridItem area='main' bg='blackAlpha.700'>
+                <Main games={games} />
             </GridItem>
         </Grid>
     );
